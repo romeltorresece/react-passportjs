@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+  
+p {
+    line-height: 1.7;
+}
+  
+ul {
+    list-style: none;
+}
+  
+li {
+    line-height: 2.2;
+}
+  
+h1,
+h2,
+h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    height: 50px;
+    background-color: #616161;
+    color: white;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+}
+
+.list-item {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.home {
+    width: 100%;
+    display: flex;
+    padding: 50px 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home > * {
+    flex: 0 0 30%;
+}
+
+@media (max-width: 950px) {
+    .home > * {
+        flex: 0 0 45%;
+    }
+}
+
+@media (max-width: 760px) {
+    .home {
+        justify-content: center;
+    }
+    .home > * {
+        flex: 0 0 100%;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    /* width: 30%; */
+    padding: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 7px 10px 22px 0px rgba(0,0,0,0.66);
+    -webkit-box-shadow: 7px 10px 22px 0px rgba(0,0,0,0.66);
+    -moz-box-shadow: 7px 10px 22px 0px rgba(0,0,0,0.66);
+    border-radius: 5px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: auto;
+}
+
+.title:hover {
+    color: #507cc0;
+}
+
+.img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 1rem 0;
+}
+
+.desc {
+    color: #333;
+    line-height: 25px;
+    padding-bottom: 1rem;
+    margin-bottom: auto;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    background-color: #464545;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.post-title {
+    text-align: center;
+}
+
+.post-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.post-desc {
+    padding: 0 100px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #909090;
+}
+
+.post-long-desc {
+    padding: 50px;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.login {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-title {
+    position: absolute;
+    top: 150px;
+    color: gray;
+}
+
+.wrapper {
+    min-width: 60%;
+    height: 75%;
+    box-shadow: 7px 10px 22px 0px rgba(0,0,0,0.66);
+    -webkit-box-shadow: 7px 10px 22px 0px rgba(0,0,0,0.66);
+    -moz-box-shadow: 7px 10px 22px 0px rgba(0,0,0,0.66);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.left, .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.left {
+    align-items: center;
+}
+
+.center {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.or {
+    border: 2px solid lightgray;
+    border-radius: 50%;
+    padding: 10px;
+    color: gray;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.line {
+    width: 0.5px;
+    height: 70%;
+    background-color: lightgray;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+.login-btn {
+    width: 150px;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.login-btn:hover {
+    width: 148px;
+}
+
+.btn-google {
+    background-color: #df4930;
+}
+
+.btn-facebook {
+    background-color: #507cc0;
+}
+
+.btn-github {
+    background-color: #000;
+}
+
+.btn-google,
+.btn-facebook,
+.btn-github {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.right {
+    padding: 0 60px;
+}
+
+.right input {
+    height: 2rem;
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.right .btn {
+    background-color: green;
+    font-size: 1rem;
+}
+
+.link {
+    color: inherit;
+}
